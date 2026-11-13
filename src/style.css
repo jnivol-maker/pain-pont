@@ -48,4 +48,33 @@ input{padding:12px;border:1px solid #d0cabc;background:#fffdf8;font-size:15px;bo
 .toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:#31483a;color:#fff;padding:12px 18px;border-radius:3px;opacity:0;pointer-events:none;transition:opacity .2s}
 .toast.show{opacity:1}
 @media(max-width:620px){.admin-stats{grid-template-columns:1fr}.admin-stats>div{display:flex;justify-content:space-between;align-items:center}.admin-stats b{margin:0}.admin-row{flex-wrap:wrap}.admin-row.reservation>div:first-child{flex-basis:100%}.admin-head h1{font-size:26px}.hero h1{font-size:27px}header span{display:none}}
-\n.admin-nav{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.admin-nav button{border:1px solid #c8c2b6;background:#fdfbf6;padding:9px 12px;border-radius:3px;color:#333}\n
+
+.admin-nav{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.admin-nav button{border:1px solid #c8c2b6;background:#fdfbf6;padding:9px 12px;border-radius:3px;color:#333}
+
+/* Identité plus vive et contrastée */
+:root{color:#20291f;background:#fbf7ed}
+body{background:#fbf7ed;color:#20291f}
+header{background:#fffdf7;border-bottom:2px solid #d8dfc8}
+header b{color:#304c32;letter-spacing:.15em}
+header span{color:#5e6b55}
+.hero small{color:#3e683d;font-weight:700;letter-spacing:.12em}
+.hero h1,.admin-head h1{color:#263b29}
+.status{background:#e7eedc;border:1px solid #c7d5b7;border-radius:4px;padding:12px 14px;color:#315b35;font-weight:700}
+h2{color:#2d482f}
+.products article{border-color:#d6ddca}
+.products h3{color:#263b29}
+.order{background:#eaf0df;border:1px solid #b9cba9;border-radius:6px}
+input{border:1px solid #b8c6aa;background:#fff}
+.primary{background:#3e713f;border-color:#3e713f;border-radius:5px;box-shadow:0 2px 0 #2d542e}
+.primary:hover{background:#315f34}
+.admin-stats>div{background:#e8efdf;border:1px solid #c5d4b8;border-radius:5px;color:#52634d}
+.admin-stats b{color:#294b2e}
+.admin-buttons .primary{background:#3e713f;border-color:#3e713f}
+.admin-row{border-color:#d6ddca}
+.admin-row button,.admin-head>button,.admin-buttons button,#add{border:1px solid #aab99e;background:#fffdf7;border-radius:4px;color:#2e492f}
+.pay-button{white-space:nowrap;font-weight:700;cursor:pointer}
+.pay-button.is-paid,.pay-button:disabled.is-paid{background:#287a43;border:1px solid #287a43;color:#fff;opacity:1;cursor:default}
+.payment-state.paid{color:#287a43;font-weight:700}
+.history-week{border:1px solid #d0dbc5;border-radius:5px;padding:12px;margin:10px 0;background:#fffdf7}
+.history-week summary{display:flex;justify-content:space-between;gap:12px;cursor:pointer;color:#304b32}
+@media(max-width:620px){.history-week summary{flex-direction:column;gap:4px}.pay-button{width:100%}}
