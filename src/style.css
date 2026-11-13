@@ -48,3 +48,4 @@ input{padding:12px;border:1px solid #d0cabc;background:#fffdf8;font-size:15px;bo
 .toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:#31483a;color:#fff;padding:12px 18px;border-radius:3px;opacity:0;pointer-events:none;transition:opacity .2s}
 .toast.show{opacity:1}
 @media(max-width:620px){.admin-stats{grid-template-columns:1fr}.admin-stats>div{display:flex;justify-content:space-between;align-items:center}.admin-stats b{margin:0}.admin-row{flex-wrap:wrap}.admin-row.reservation>div:first-child{flex-basis:100%}.admin-head h1{font-size:26px}.hero h1{font-size:27px}header span{display:none}}
+\n.admin-nav{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.admin-nav button{border:1px solid #c8c2b6;background:#fdfbf6;padding:9px 12px;border-radius:3px;color:#333}\n
