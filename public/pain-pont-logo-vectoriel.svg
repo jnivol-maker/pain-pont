@@ -18,7 +18,7 @@
 <g id="c">
 <path d="m5.3906 0h6.9219v-29.766h5.1406v-6.1719h-17.203v6.1719h5.1406z"/>
 </g>
-<clipPath id="text-area"><path d="M0 0H283.46V176.1H0Z"/></clipPath>
+<clipPath id="text-area" clipPathUnits="userSpaceOnUse"><path d="M0 0H283.46V176.1H0Z"/></clipPath>
 <clipPath id="k">
 <path d="m139 137h138v130h-138z"/>
 </clipPath>
