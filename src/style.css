@@ -78,3 +78,7 @@ input{border:1px solid #b8c6aa;background:#fff}
 .history-week{border:1px solid #d0dbc5;border-radius:5px;padding:12px;margin:10px 0;background:#fffdf7}
 .history-week summary{display:flex;justify-content:space-between;gap:12px;cursor:pointer;color:#304b32}
 @media(max-width:620px){.history-week summary{flex-direction:column;gap:4px}.pay-button{width:100%}}
+
+.brand-logo{display:block;width:52px;height:52px;object-fit:contain;flex:0 0 52px}
+header{min-height:68px;height:auto}
+@media(max-width:620px){.brand-logo{width:46px;height:46px;flex-basis:46px}}
