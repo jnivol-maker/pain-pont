@@ -82,3 +82,8 @@ input{border:1px solid #b8c6aa;background:#fff}
 .brand-logo{display:block;width:52px;height:52px;object-fit:contain;flex:0 0 52px}
 header{min-height:68px;height:auto}
 @media(max-width:620px){.brand-logo{width:46px;height:46px;flex-basis:46px}}
+
+
+/* Logo principal centré dans la page d'accueil */
+.hero-brand-logo{display:block;width:min(240px,72%);height:auto;max-height:240px;object-fit:contain;margin:4px auto 24px}
+.hero{text-align:center}
