@@ -256,3 +256,35 @@ input{
   .toast{width:calc(100% - 32px);text-align:center;bottom:14px}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+
+
+/* Ajustement palette sauge et contraste */
+:root{
+  --paper:#F7F4EC;
+  --paper-light:#FFFEFA;
+  --flour:#D8DCCB;
+  --sage:#71866F;
+  --forest:#526D57;
+  --terracotta:#A85F3D;
+  --ink:#26372B;
+  --muted:#5F685D;
+  --line:#D4D8CB;
+  --soft:#E7EBDD;
+  color:var(--ink);
+  background:var(--paper);
+}
+html,body{background:var(--paper);color:var(--ink)}
+header b,.hero h1,.admin-head h1,h2,.products h3,.history-week summary{color:#3E5943}
+header span,.hero p,.admin-head p,.products small,.muted,.admin-row small{color:#5F685D}
+.hero small,.admin-head>div>small{color:#526D57}
+.status,.payment-filter button{background:#E6ECDF;border-color:#C5D1BE;color:#354F3A}
+.order{background:#FFFEFA;border-color:#D4D8CB}
+.admin-stats>div{background:#FFFEFA;border-color:#D4D8CB;color:#5F685D}
+.admin-stats b{color:#3E5943}
+.primary,.admin-buttons .primary{
+  background:#526D57;border-color:#526D57;color:#fff;
+  box-shadow:0 3px 0 #405744,0 6px 14px rgba(52,79,58,.13);
+}
+.primary:hover{background:#455F4A}
+.pay-button.is-paid,.pay-button:disabled.is-paid{background:#607B64;border-color:#607B64;color:#fff}
+.payment-state.paid{color:#49694F}
