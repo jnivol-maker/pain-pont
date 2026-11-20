@@ -337,3 +337,16 @@ header span,.hero p,.admin-head p,.products small,.muted,.admin-row small{color:
 .week-order b{color:#354F3A}
 .week-order span{color:#5F685D;text-align:right}
 @media(max-width:620px){.week-orders{padding:16px;border-radius:15px}.week-order{flex-direction:column;gap:2px}.week-order span{text-align:left}}
+
+
+/* Le récapitulatif hebdomadaire utilise davantage la largeur disponible */
+.week-orders{
+  position:relative;
+  left:50%;
+  transform:translateX(-50%);
+  width:min(1000px, calc(100vw - 48px));
+  padding:20px 26px;
+}
+@media(max-width:620px){
+  .week-orders{width:calc(100vw - 32px);padding:16px}
+}
