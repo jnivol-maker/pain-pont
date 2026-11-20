@@ -327,3 +327,13 @@ header span,.hero p,.admin-head p,.products small,.muted,.admin-row small{color:
   .admin-row.reservation .reservation-actions .pay-button,
   .admin-row.reservation .reservation-actions .cancel-button{width:auto;min-height:32px;padding:6px 8px;font-size:10px}
 }
+
+
+/* Récapitulatif des commandes de la semaine sur la page publique */
+.week-orders{margin:30px 0 24px;padding:18px 20px;background:#FFFEFA;border:1px solid #D4D8CB;border-radius:18px;box-shadow:0 5px 18px rgba(41,59,48,.055)}
+.week-orders h2{margin:0 0 12px}
+.week-order{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px solid #E5E7DE}
+.week-order:last-child{border-bottom:0;padding-bottom:0}
+.week-order b{color:#354F3A}
+.week-order span{color:#5F685D;text-align:right}
+@media(max-width:620px){.week-orders{padding:16px;border-radius:15px}.week-order{flex-direction:column;gap:2px}.week-order span{text-align:left}}
