@@ -350,3 +350,11 @@ header span,.hero p,.admin-head p,.products small,.muted,.admin-row small{color:
 @media(max-width:620px){
   .week-orders{width:calc(100vw - 32px);padding:16px}
 }
+
+
+/* Garder les quantités sur une seule ligne dans le récapitulatif mobile */
+@media(max-width:620px){
+  .week-order{flex-direction:row;align-items:center;gap:10px}
+  .week-order b{min-width:0;text-align:left}
+  .week-order span{flex:0 0 auto;white-space:nowrap;text-align:right}
+}
