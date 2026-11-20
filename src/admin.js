@@ -1,5 +1,6 @@
 const endpoint="https://gesxkccnvxwmjitqcrkf.supabase.co/functions/v1/admin-pin";
 const app=document.querySelector("#app"), money=n=>new Intl.NumberFormat("fr-BE",{style:"currency",currency:"EUR"}).format(Number(n||0));
+const weekTitle=s=>{if(!s?.created_at)return s?.title||"Vente";const d=new Date(s.created_at);d.setDate(d.getDate()-((d.getDay()+6)%7)+4);return "Semaine du "+d.toLocaleDateString("fr-BE",{weekday:"long",day:"numeric",month:"long"});};
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 let token=sessionStorage.getItem("pp_admin_token")||"", data=null, showUnpaidOnly=false;
 async function api(action,params={}){const r=await fetch(endpoint,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({action,token,...params})});const d=await r.json();if(!r.ok)throw Error(d.error||"Erreur administration");return d}
