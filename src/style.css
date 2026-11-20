@@ -358,3 +358,11 @@ header span,.hero p,.admin-head p,.products small,.muted,.admin-row small{color:
   .week-order b{min-width:0;text-align:left}
   .week-order span{flex:0 0 auto;white-space:nowrap;text-align:right}
 }
+
+
+/* Part de 5 % destinée à l'HG dans l'administration */
+.hg-summary{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:18px 0 22px;padding:16px 20px;background:#E7EBDD;border:1px solid #C5D1BE;border-radius:14px}
+.hg-summary span{font-weight:800;color:#354F3A}
+.hg-summary strong{font-size:clamp(22px,4vw,30px);font-weight:800;color:#3E5943;font-variant-numeric:tabular-nums}
+.hg-summary small{color:#5F685D}
+@media(max-width:620px){.hg-summary{gap:7px 10px;padding:14px 16px}.hg-summary small{flex-basis:100%}}
